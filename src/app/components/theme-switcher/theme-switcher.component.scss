@@ -1,0 +1,12 @@
+@import "../shared.scss";
+
+.container-down {
+  padding-left: 0.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.button-theme-switcher {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+}
