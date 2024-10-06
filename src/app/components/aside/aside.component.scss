@@ -1,0 +1,101 @@
+@import "../shared.scss";
+
+aside {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 275px;
+  height: 100%;
+  background-color: var(--container);
+}
+
+body {
+  &.dark {
+    aside {
+      background-color: red;
+    }
+  }
+}
+.container-top {
+  padding-top: 4rem;
+  padding-left: 0.5rem;
+}
+
+.menu-option {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--selected);
+    border-radius: 0.25rem
+  }
+}
+
+body.dark *.menu-option {
+  .menu-option:hover {
+    background-color: red;
+  }
+}
+
+.remaining-time {
+  grid-column: span 1 / span 1;
+  padding-top: 0.25rem;
+  font-size: 0.6255rem;
+  color: var(--tertiary);
+}
+
+.not-completed-tasks {
+  grid-column: auto;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-size: 0.6255rem;
+  color: var(--tertiary);
+}
+
+@media (min-width: 768px) {
+  .menu-option {
+    grid-column: span 3 / span 3;
+  }
+}
+
+@media (max-width: 768px) {
+  aside {
+    width: 165px;
+    padding: 0.5rem;
+  }
+
+  .menu-option {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .remaining-time {
+    display: none;
+  }
+
+  .not-completed-tasks {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  aside {
+    padding: 0;
+    width: 3rem;
+  }
+
+  .container-top {
+    padding-left: 0;
+  }
+
+  .menu-option {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+  }
+}
+
