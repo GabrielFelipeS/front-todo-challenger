@@ -1,0 +1,21 @@
+.title-aside {
+  grid-column: span 2 / span 2;
+  color: var(--primary);
+}
+
+.image-aside {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 640px) {
+  .title-aside {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-aside {
+    grid-column: span 3 / span 3;
+  }
+}
