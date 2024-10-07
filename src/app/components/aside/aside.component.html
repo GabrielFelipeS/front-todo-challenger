@@ -2,37 +2,44 @@
   <div class="container-top">
   <ul>
     <aside-menu-option titulo="Hoje" urlImg="assets/todayIcon.png"
+      endPoint="/today"
       [tasks]="tasks"
       [filter]="taskFilters.TODAY_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
     />
 
     <aside-menu-option titulo="Amanhã"  urlImg="assets/tomorrowIcon.png"
-       [tasks]="tasks"
+      endPoint="/tomorrow"
+      [tasks]="tasks"
       [filter]="taskFilters.TOMORROW_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
     />
 
     <aside-menu-option titulo="Esta Semana"  urlImg="assets/calendarIcon.png"
-       [tasks]="tasks"
+      endPoint="/thisWeek"
+      [tasks]="tasks"
       [filter]="taskFilters.THIS_WEEK_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
     />
 
     <aside-menu-option titulo="Próximos 7 dias"  urlImg="assets/7DaysIcon.png"
-       [tasks]="tasks"
+      endPoint="/sevenDays"
+      [tasks]="tasks"
       [filter]="taskFilters.NEXT_SEVEN_DAYS_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
     />
 
     <aside-menu-option titulo="Planejado"  urlImg="assets/plannedIcon.png"
-       [tasks]="tasks"
+      endPoint="/tasks"
+      [tasks]="tasks"
       [filter]="taskFilters.PLANNED_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
     />
 
     <aside-menu-option titulo="Tarefas"  urlImg="assets/TasksIcon.png"
-       [tasks]="tasks"
+      endPoint="/tasks"
+      [tasks]="tasks"
       [filter]="taskFilters.ALL_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
     />
 
     <aside-menu-option titulo="Concluido"  urlImg="assets/concludedIcon.png"
-       [tasks]="tasks"
+      endPoint="/concluded"
+      [tasks]="tasks"
       [filter]="taskFilters.COMPLETED_TASKS_FILTER"
     />
 

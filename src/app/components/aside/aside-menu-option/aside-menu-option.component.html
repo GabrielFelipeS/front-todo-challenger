@@ -1,4 +1,6 @@
-<li class="menu-option">
+<li class="menu-option"
+    [class.selected]="isSelected()"
+>
   <img class="image-aside" src="{{ urlImg }}">
   <div class="title-aside">
     {{ titulo }}

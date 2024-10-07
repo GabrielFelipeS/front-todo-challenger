@@ -9,7 +9,7 @@
   padding-bottom: 0.5rem;
   cursor: pointer;
 
-  &:hover {
+  &:hover, &.selected {
     background-color: var(--selected);
     border-radius: 0.25rem
   }
