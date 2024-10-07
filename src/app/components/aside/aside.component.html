@@ -1,90 +1,41 @@
 <aside>
   <div class="container-top">
   <ul>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/todayIcon.png">
-      <div class="title-aside">
-        Hoje
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/tomorrowIcon.png">
-      <div class="title-aside">
-        Amanhã
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/calendarIcon.png">
-      <div class="title-aside">
-        Esta Semana
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/7DaysIcon.png">
-      <div class="title-aside">
-        Próximos 7 dias
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/plannedIcon.png">
-      <div class="title-aside">
-        Planejado
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/TasksIcon.png">
-      <div class="title-aside">
-        Tarefas
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
-    <li class="menu-option">
-      <img class="image-aside" src="assets/concludedIcon.png">
-      <div class="title-aside">
-        Concluido
-      </div>
-      <div class="remaining-time">
-        10h 20m
-      </div>
-      <div class="not-completed-tasks">
-        5
-      </div>
-    </li>
+    <aside-menu-option titulo="Hoje" urlImg="assets/todayIcon.png"
+      [tasks]="tasks"
+      [filter]="taskFilters.TODAY_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
+    />
+
+    <aside-menu-option titulo="Amanhã"  urlImg="assets/tomorrowIcon.png"
+       [tasks]="tasks"
+      [filter]="taskFilters.TOMORROW_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
+    />
+
+    <aside-menu-option titulo="Esta Semana"  urlImg="assets/calendarIcon.png"
+       [tasks]="tasks"
+      [filter]="taskFilters.THIS_WEEK_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
+    />
+
+    <aside-menu-option titulo="Próximos 7 dias"  urlImg="assets/7DaysIcon.png"
+       [tasks]="tasks"
+      [filter]="taskFilters.NEXT_SEVEN_DAYS_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
+    />
+
+    <aside-menu-option titulo="Planejado"  urlImg="assets/plannedIcon.png"
+       [tasks]="tasks"
+      [filter]="taskFilters.PLANNED_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
+    />
+
+    <aside-menu-option titulo="Tarefas"  urlImg="assets/TasksIcon.png"
+       [tasks]="tasks"
+      [filter]="taskFilters.ALL_TASKS_FILTER_PENDING_OR_IN_PROGRESS"
+    />
+
+    <aside-menu-option titulo="Concluido"  urlImg="assets/concludedIcon.png"
+       [tasks]="tasks"
+      [filter]="taskFilters.COMPLETED_TASKS_FILTER"
+    />
+
   </ul>
   </div>
 
