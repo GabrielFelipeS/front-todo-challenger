@@ -1,0 +1,8 @@
+.task-title-info {
+  color: var(--primary);
+}
+
+.task-title-info.completed {
+  color: var(--tertiary);
+  text-decoration-line: line-through;
+}
