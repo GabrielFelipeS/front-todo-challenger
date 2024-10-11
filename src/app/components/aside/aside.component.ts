@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ThemeSwitcherComponent} from "../theme-switcher/theme-switcher.component";
+import {ThemeSwitcherComponent} from "./theme-switcher/theme-switcher.component";
 import {AsideMenuOptionComponent} from "./aside-menu-option/aside-menu-option.component";
 import {Task} from "../../models/Task";
 import {TaskService} from "../../services/task.service";
