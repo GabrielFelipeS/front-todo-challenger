@@ -30,7 +30,6 @@ export class TaskListComponent implements OnInit, OnChanges{
 
   filterTask() {
     this.notCompletedTasks = this.filteredTasks.filter(PLANNED_TASKS_FILTER_PENDING_OR_IN_PROGRESS)
-
   }
 
 

@@ -37,6 +37,17 @@ img {
   height: 1.25rem;
 }
 
+.task-list-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--container);
+  border-radius: 0.5rem;
+  color: var(--tertiary);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 @media (max-width: 300px) {
   .highlight {
     display: none;
