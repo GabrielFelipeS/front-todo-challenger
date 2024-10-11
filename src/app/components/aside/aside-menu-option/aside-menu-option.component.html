@@ -1,7 +1,5 @@
-<li
-      [class.selected]="isSelected()"
-  >
-    <a routerLink="{{ endPoint }}" class="menu-option">
+<li>
+    <a routerLink="{{ endPoint }}" class="menu-option" [class.selected]="isSelected()">
     <img class="image-aside" src="{{ urlImg }}">
     <div class="title-aside">
       {{ titulo }}

@@ -3,6 +3,7 @@
 .aside-container {
   display: flex;
   position: fixed;
+  padding: 0;
   top: 0;
   flex-direction: column;
   justify-content: space-between;
@@ -19,7 +20,7 @@
 @media (max-width: 768px) {
   .aside-container {
     width: 165px;
-    padding: 0.5rem;
+    padding-right: 0.5rem;
   }
 
 }

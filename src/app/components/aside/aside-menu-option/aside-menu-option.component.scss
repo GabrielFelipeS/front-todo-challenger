@@ -15,6 +15,11 @@
   }
 }
 
+.menu-option.selected {
+  background-color: var(--selected);
+  border-radius: 0.25rem
+}
+
 .remaining-time {
   grid-column: span 1 / span 1;
   padding-top: 0.25rem;
@@ -24,7 +29,7 @@
 
 .not-completed-tasks {
   grid-column: auto;
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
   text-align: center;
   font-size: 0.6255rem;
   color: var(--tertiary);
@@ -54,6 +59,7 @@
   .menu-option {
     grid-template-columns: repeat(1, minmax(0, 1fr));
     justify-items: center;
+    margin-left: 0;
   }
 }
 
