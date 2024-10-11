@@ -1,0 +1,44 @@
+image {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.task-list {
+  margin-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 95%;
+}
+
+.task-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  height: 4rem;
+  background-color: var(--container);
+}
+
+.task-info {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.highlight {
+  color: var(--highlight);
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
+}
+
+img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+@media (max-width: 300px) {
+  .highlight {
+    display: none;
+  }
+}

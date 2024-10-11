@@ -1,1 +1,35 @@
-<p>task-overview works!</p>
+<div class="task-overview-container">
+  <div class="task-overview-info">
+    <p>
+      @if (containsHours) {
+        <span> {{ hours }}</span>h
+      }
+      <span> {{ minutes }}</span>min
+    </p>
+    <p>
+      Prazo estimado
+    </p>
+  </div>
+
+  <div class="task-overview-info">
+    <p>
+       <span> {{ pendingTasksCount }} </span>
+    </p>
+    <p>
+      Tarefa pendentes
+    </p>
+  </div>
+
+  <div class="task-overview-info">
+    <p>
+         <span> {{ concludedTasksCount }} </span>
+    </p>
+    <p>
+      Tarefas Concluidas
+    </p>
+  </div>
+</div>
+
+<div class="task-title-time">
+  Tarefas -  @if (containsHours) {{{ hours }}h }{{ minutes }}min
+</div>

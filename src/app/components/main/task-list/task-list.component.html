@@ -1,1 +1,20 @@
-<p>task-list works!</p>
+<section class="task-list">
+@for (task of notCompletedTasks ; track task.id) {
+  <div class="task-container">
+      <div class="task-info ml-2">
+        <app-check-button [task]="task"/>
+        <app-task-info [task]="task"/>
+      </div>
+
+    <div class="task-info mr-2">
+      <div class="highlight">
+          {{task.task_date.getDate()}} ago
+      </div>
+      <div>
+        <img src="assets/arrow_rightIcon.png" alt="seta para direita">
+      </div>
+    </div>
+
+  </div>
+}
+</section>
