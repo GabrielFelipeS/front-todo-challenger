@@ -42,7 +42,8 @@ $dark-border: #474236;
   --selected: #F5F5F5;
   --detail: #FBFBFB;
   --detail-span: #FED4D4;
-  --border: #51B156;
+  --border: #BDC2CF;
+  // --border: #51B156;
 }
 
 // Cores - tema escuro (dark)
@@ -84,12 +85,6 @@ ol {
   margin: 0;
 }
 
-button {
-  all: unset;
-  display: inline-block;
-  cursor: pointer;
-}
-
 img {
   all: unset;
   display: block;
@@ -115,6 +110,18 @@ a {
 }
 
 h1 {
+  all: unset;
+}
+
+p {
   margin: 0;
   padding: 0;
+}
+
+.ml-2 {
+  margin-left: 0.50rem;
+}
+
+.mr-2 {
+  margin-right: 0.50rem;
 }

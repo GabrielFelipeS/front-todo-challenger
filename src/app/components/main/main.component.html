@@ -1,7 +1,7 @@
-<main class="main-body md:w-[95%] md:pl-72 max-md:pl-40 max-md:w-11/12 max-sm:pl-10">
-  <h1>
+<main class="main-body md:pl-72 max-md:pl-11 max-md:w-11/12 max-sm:pl-10">
+  <h1 class="title-main">
     {{ title }}
   </h1>
-  <task-overview/>
-  <task-list/>
+  <task-overview [filteredTasks]="filterdTasks"/>
+  <task-list  [filteredTasks]="filterdTasks"/>
 </main>
