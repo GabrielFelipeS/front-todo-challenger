@@ -1,8 +1,9 @@
 @import "../shared.scss";
 
-aside {
-  position: fixed;
+.aside-container {
   display: flex;
+  position: fixed;
+  top: 0;
   flex-direction: column;
   justify-content: space-between;
   width: 275px;
@@ -16,7 +17,7 @@ aside {
 }
 
 @media (max-width: 768px) {
-  aside {
+  .aside-container {
     width: 165px;
     padding: 0.5rem;
   }
@@ -24,7 +25,7 @@ aside {
 }
 
 @media (max-width: 640px) {
-  aside {
+  .aside-container {
     padding: 0;
     width: 3rem;
   }
