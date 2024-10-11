@@ -16,4 +16,17 @@ export class TaskService {
   getTasks() {
     return this.task$.asObservable();
   }
+
+  changeStatus(updatedTask: Task) {
+    const currentTasks = this.task$.getValue();
+
+    const updatedTasks = currentTasks.map(task =>
+      task.id === updatedTask.id ? { ...task, ...updatedTask } : task
+    );
+
+    console.log(this.task$.getValue().length)
+    console.log(this.task$.getValue().length)
+    this.task$.next(updatedTasks);
+    console.log("atualizado")
+  }
 }
