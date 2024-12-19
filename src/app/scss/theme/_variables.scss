@@ -1,0 +1,61 @@
+:root {
+  --primary: #000000;
+  --secondary: #BDC2CF;
+  --tertiary: #AEAEAE;
+  --highlight: #FD5553;
+  --accent: #51B156;
+  --screen: #F7F7FA;
+  --container: #FFFFFF;
+  --selected: #F5F5F5;
+  --detail: #FBFBFB;
+  --detail-span: #FED4D4;
+  --border: #BDC2CF;
+}
+
+// Cores - tema escuro (dark)
+body.dark {
+  --primary: #FFFFFF;
+  --secondary: #BDC2CF;
+  --tertiary: #AEAEAE;
+  --highlight: #02AAAC;
+  --accent: #02AAAC;
+  --screen: #0f0f0f;
+  --container: #090809;
+  --selected: #1D1D1D;
+  --detail: #121012;
+  --detail-span: #002627;
+  --border: #474236;
+}
+
+//// Fontes
+//$font-size-teen: 0.6255rem;
+//
+//// Tamanhos de tela (breakpoints)
+//$screen-xs: 500px;
+//
+//// Cores - tema claro (light)
+//$light-primary: #000000;
+//$light-secondary: #BDC2CF;
+//$light-tertiary: #AEAEAE;
+//$light-highlight: #FD5553;
+//$light-accent: #51B156;
+//$light-screen: #F7F7FA;
+//$light-container: #FFFFFF;
+//$light-selected: #F5F5F5;
+//$light-detail: #FBFBFB;
+//$light-detail-span: #FED4D4;
+//$light-border: #51B156;
+//
+//// Cores - tema escuro (dark)
+//$dark-primary: #FFFFFF;
+//$dark-secondary: #BDC2CF;
+//$dark-tertiary: #AEAEAE;
+//$dark-highlight: #02AAAC;
+//$dark-accent: #02AAAC;
+//$dark-screen: #0f0f0f;
+//$dark-container: #090809;
+//$dark-selected: #1D1D1D;
+//$dark-detail: #121012;
+//$dark-detail-span: #002627;
+//$dark-border: #474236;
+//
